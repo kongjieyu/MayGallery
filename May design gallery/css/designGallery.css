@@ -1,0 +1,586 @@
+/* Insert new type of font */
+    @font-face {
+    font-family: 'Biryani';
+    src: url('../fonts/Biryani-Black.ttf');
+    }
+
+    body {
+      background-color: #efefef;
+    }
+
+    /* Nav start */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #000;
+      color: #FFF;
+      font-size: 1.1em;
+      border: 0;
+    }
+
+    .navbar-brand {
+      float: left;
+      min-height: 60px;
+      padding: 14px 60px 15px;
+    }
+
+    .navbar-inverse .navbar-nav .active a,
+    .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover,
+      {
+      color: #FFF;
+    }
+
+    .navbar-collapse {
+      padding-right: 30px;
+    }
+
+    .navbar-nav>li>a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin: 5px;
+    }
+
+    .navbar-toggle {
+      position: relative;
+      float: right;
+      padding: 9px 10px;
+      margin-top: 12px;
+      margin-right: 15px;
+      margin-bottom: 8px;
+    }
+
+    @media screen and (max-width:600px) {
+      .navbar-brand {
+        padding: 14px 35px 15px
+      }
+    }
+
+    /* Nav end */
+
+    /* Poster start  */
+
+    .btn {
+      padding: 8px 40px !important;
+      border-radius: 30px;
+    }
+
+    .jumbotron {
+      /* background-image: url(../image/posterDinosaur.png);
+            background-size:1500px auto;  */
+      /* background-color: #f9f9f9; */
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width:767px) {
+      .jumbotron-heading {
+        font-size: 46px;
+        font-family: 'Biryani';
+        line-height: 140%;
+        
+      }
+      .jumbotron {
+        /* color: white; */
+        /* background-image: url(../image/background.png);  */
+         
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .jumbotron {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        /* color: white; */
+        /* background-image: url(../image/background.png);  */
+      }
+      .jumbotron-heading {
+        font-size: 80px;
+        font-family: 'Biryani';
+        
+      }
+
+    }
+    .text-muted {
+      /* color: #d6d5d5; */
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #ff8a00;
+      border-color: #ff8a00;
+    }
+
+    .btn-primary:focus,
+    .btn-primary.focus {
+      color: #fff;
+      background-color: #dd5f03;
+      border-color: #dd5f03;
+    }
+
+    .btn-primary:hover {
+      color: #fff;
+      background-color: #dd5f03;
+      border-color: #dd5f03;
+    }
+
+    .btn-primary:active,
+    .btn-primary.active,
+    .open>.dropdown-toggle.btn-primary {
+      color: #fff;
+      background-color: #dd5f03;
+      border-color: #dd5f03;
+    }
+
+    .btn-primary:active:hover,
+    .btn-primary.active:hover,
+    .open>.dropdown-toggle.btn-primary:hover,
+    .btn-primary:active:focus,
+    .btn-primary.active:focus,
+    .open>.dropdown-toggle.btn-primary:focus,
+    .btn-primary:active.focus,
+    .btn-primary.active.focus,
+    .open>.dropdown-toggle.btn-primary.focus {
+      color: #fff;
+      background-color: #000;
+      border-color: #000;
+    }
+
+    .btn-primary:active,
+    .btn-primary.active,
+    .open>.dropdown-toggle.btn-primary {
+      background-image: none;
+    }
+
+    .btn-primary.disabled:hover,
+    .btn-primary[disabled]:hover,
+    fieldset[disabled] .btn-primary:hover,
+    .btn-primary.disabled:focus,
+    .btn-primary[disabled]:focus,
+    fieldset[disabled] .btn-primary:focus,
+    .btn-primary.disabled.focus,
+    .btn-primary[disabled].focus,
+    fieldset[disabled] .btn-primary.focus {
+      background-color: #000;
+      border-color: #000;
+    }
+
+    .btn {
+      padding: 6px 26px;
+      font-size: 1.1em;
+    }
+
+    /*poster end  */
+
+    /*gallery  */
+
+    .box-shadow {
+      box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+      border-bottom-left-radius: calc(0.5rem - 1px);
+      border-bottom-right-radius: calc(0.5rem - 1px);
+    }
+
+    .py-5 {
+      padding-top: 1rem !important;
+    }
+
+    .mb-4,
+    .my-4 {
+      margin-bottom: 2rem !important;
+    }
+
+    /* .pr-5,
+        .px-5 {
+             padding-right: 3rem !important;
+        } */
+
+    /* .pb-5,
+        .py-5 {
+             padding-bottom: 4rem !important;
+        } */
+
+    /* .bg-light {
+        background-color: #f8f9fa !important;
+        }   */
+
+    a.bg-light:hover,
+    a.bg-light:focus,
+    button.bg-light:hover,
+    button.bg-light:focus {
+      background-color: #dae0e5 !important;
+    }
+
+    .card-img-top {
+      width: 100%;
+      border-top-left-radius: calc(0.5rem - 1px);
+      border-top-right-radius: calc(0.5rem - 1px);
+    }
+
+    .card-img-bottom {
+      width: 100%;
+      border-bottom-right-radius: calc(0.5rem - 1px);
+      border-bottom-left-radius: calc(0.5rem - 1px);
+    }
+
+    .card-group>.card:first-child .card-img-top,
+    .card-group>.card:first-child .card-header {
+      border-top-right-radius: 0;
+    }
+
+    .card-group>.card:first-child .card-img-bottom,
+    .card-group>.card:first-child .card-footer {
+      border-bottom-right-radius: 0;
+    }
+
+    .card-group>.card:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .card-group>.card:last-child .card-img-top,
+    .card-group>.card:last-child .card-header {
+      border-top-left-radius: 0;
+    }
+
+    .card-group>.card:last-child .card-img-bottom,
+    .card-group>.card:last-child .card-footer {
+      border-bottom-left-radius: 0;
+    }
+
+    .card-group>.card:only-child {
+      border-radius: 0.25rem;
+    }
+
+    .card-group>.card:only-child .card-img-top,
+    .card-group>.card:only-child .card-header {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
+
+    .card-group>.card:only-child .card-img-bottom,
+    .card-group>.card:only-child .card-footer {
+      border-bottom-right-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+    }
+
+    .card-body {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 1.25rem;
+      background-color: #FFF;
+      border-bottom-left-radius: calc(0.5rem - 1px);
+      border-bottom-right-radius: calc(0.5rem - 1px);
+    }
+
+    .card-text:last-child {
+      margin-bottom: 0;
+    }
+    .card-text{
+      color: gray;
+      text-align: justify;
+    }
+
+    /*  */
+
+    .m-auto {
+      margin: auto !important;
+    }
+
+    .mt-auto,
+    .my-auto {
+      margin-top: auto !important;
+    }
+
+    .mr-auto,
+    .mx-auto {
+      margin-right: auto !important;
+    }
+
+    .mb-auto,
+    .my-auto {
+      margin-bottom: auto !important;
+    }
+
+    .ml-auto,
+    .mx-auto {
+      margin-left: auto !important;
+    }
+
+    .me {
+      margin-top:10px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      background-color: #efefef;
+    }
+
+    .smallPicture01 {
+      background-image: url("../image/bravoShop.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+
+    .smallPicture02 {
+      background-image: url("../image/ScreenShot.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+
+    .smallPicture03 {
+      background-image: url("../image/earthShot.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+
+    .smallPicture04 {
+      background-image: url("../image/classroom.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+
+    .smallPicture05 {
+      background-image: url("../image/dinosaurPink.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+
+    .smallPicture06 {
+      background-image: url("../image/baby.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+    .smallPicture07 {
+      background-image: url("../image/jumpCountPoster.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+
+    .smallPicture08 {
+      background-image: url("../image/lunaPoster.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+
+    .smallPicture09 {
+      background-image: url("../image/coding.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+
+    .smallPicture10 {
+      background-image: url("../image/bag.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+      .smallPicture11 {
+      background-image: url("../image/ArtLifePoster.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 280px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+
+    .a {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .imgSize {
+      width: 80px;
+      height: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
+
+    /* pop up css*/
+
+    .modal-content {
+      position: fixed; 
+      right: 0;
+      left: 0;
+      border: 0px;
+      height: 98vh;
+      overflow: hidden;
+    }
+
+     .modal-frame {
+      padding: 0;
+      height: 100vh;
+      /* height: 90%; */
+    } 
+
+    .modal-header {
+      border-bottom: none;
+    }
+
+    .modal-dialog {
+      /* display: none; */
+    }
+    .modal-scroll {
+      /* margin-left: 2%;
+      margin-right: 2%;  */
+      height: 90%;
+      overflow: scroll;
+    }
+
+    .modal-backdrop.in {
+    /* filter: alpha(opacity=50); */
+      opacity: 0;
+    }
+    .modal-header {
+      margin-bottom: 0;
+    }
+    .modal-body {
+      padding: 0;
+      height: 90vh;
+      overflow: scroll;
+    }
+
+    .left-body {
+      padding-right: 20px; 
+      padding-left: 20px 
+    }
+
+    @media screen and (min-width: 768px) {
+      .modal-dialog {
+        display: block;
+        width: 96%;
+        margin: 8px auto;
+      }
+      .modal-backdrop.in {
+        filter: alpha(opacity=50);
+        opacity: .5;
+      }
+    }
+
+
+    .squarePlaceholder {
+      /* text-align: center; */
+      width: 100%;
+      /* border: 1px solid red; */
+    }
+
+    /* pop up css*/
+
+
+    .imgSizeSDetting {
+      width: 100%;
+      margin: 5px 0px; 
+      /* border: 1px solid black;  */
+    }
+    .innerPra {
+      text-align: center; 
+      padding-right:20px; 
+      padding-left:20px;
+    }
+
+    .kidPoster {
+      background-image: url("../image/kidsPlain.png");
+      background-size: cover;
+      /* background-position: 50% 50%; */
+    }
+
+    .posterHeader {
+      color:#046c53; 
+      font-family: 'Biryani'
+    }
+
+    .posterHeader:hover {
+      color:#046c53; 
+    }
+
+
+    /* footer CSS */
+    .footer {
+    padding-top: 30px;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    line-height: 30px;
+    background-color:#efefef;
+    }
+
+    .labelTitle{
+      margin-bottom:20px;
+    }
+
+    .square {
+      width: 10px;
+      height: 10px;
+      background-color:#b9b8b6;
+      color: #b9b8b6;
+      margin-right: 20px;
+    }
+
+    .card-text {
+      height:60px;
+      overflow: hidden;
+      text-overflow: ellipsis; 
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    
+    #footerBackground {
+      background-color: #cccccc;
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+    }
+
+    .predictation {
+      background-color: #cfa972;
+    }
+
+    .btn-lang {
+      padding: 0 3px !important;
+      font-size: 12px;
+      width: 50px;
+      height: 30px;
+      color: #000;
+    }
+
+    .btn-group {
+      margin-left: 30px;
+    }
